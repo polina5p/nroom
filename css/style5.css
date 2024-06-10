@@ -1,0 +1,102 @@
+.gallery {
+  --s: 150px; /* control the size */
+  --g: 10px;  /* control the gap */
+  --f: 1.5;   /* control the scale factor */
+  
+  display: grid;
+  gap: var(--g);
+  width: calc(3*var(--s) + 2*var(--g));
+  aspect-ratio: 1;
+  grid-template-columns: repeat(3,auto);
+}
+
+.gallery > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: .35s linear;
+  box-shadow: 0 0 25px #ff4fa1;
+}
+
+.gallery img:hover{
+  width:  calc(var(--s)*var(--f));
+  height: calc(var(--s)*var(--f));
+}
+
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: #7c7c7c;
+}
+.Exit {
+  padding: 1rem 1rem;
+  max-width: 10rem;
+  margin-top: 0 auto;
+  border-radius: 2.5rem;
+  background-color: rgb(255, 255, 255);;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+  top:50px; 
+  left:50px; 
+  display: grid;
+  width: 100%;
+  grid-gap: 20px;
+ 
+
+}
+.Exit a {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-align: center;
+  
+  
+}
+.Exit :hover{
+  border-radius: 2.5rem;
+  padding: 1rem 2rem;
+  max-width: 10rem;
+  margin-top: 3%;
+  background-color: rgb(158, 76, 252);;
+  color: rgb(255, 255, 255);  
+  transition: 0.3s;
+}
+.zapis{
+  padding: 1rem 1rem;
+  max-width: 10rem;
+  margin-top: 0 auto;
+  border-radius: 2.5rem;
+  background-color: rgb(255, 255, 255);;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+  top:50px; 
+  right:50px; 
+  display: grid;
+  width: 100%;
+  grid-gap: 20px;
+}
+.zapis a {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-align: center;
+}
+.zapis :hover{
+  border-radius: 2.5rem;
+  padding: 1rem 2rem;
+  max-width: 10rem;
+  margin-top: 3%;
+  background-color: rgb(252, 76, 185);;
+  color: rgb(255, 255, 255);  
+  transition: 0.3s;
+}

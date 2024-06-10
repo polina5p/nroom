@@ -1,0 +1,445 @@
+* {
+    box-sizing: border-box;
+
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+    background: #231729;
+  }
+  body p {
+    color: #aaa;
+    font-size: 18px;
+  }
+  .zapis{
+    padding: 1rem 1rem;
+    max-width: 10rem;
+    margin-top: 0 auto;
+    border-radius: 2.5rem;
+    background-color: rgb(99, 101, 221);;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    top:50px; 
+    right:50px; 
+    display: grid;
+    width: 100%;
+    grid-gap: 20px;
+  }
+  .zapis a {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    
+    
+  }
+  .zapis :hover{
+    border-radius: 2.5rem;
+    padding: 1rem 2rem;
+    max-width: 10rem;
+    margin-top: 3%;
+    background-color: rgb(252, 76, 185);;
+    color: rgb(255, 255, 255);  
+    transition: 0.3s;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+  }
+  
+  .header{
+    margin-bottom: 50%;
+    box-shadow: 0 0 10px #dd3da0;
+    transition: 4s;
+    max-width: 100%;
+  
+    max-height: 100%;
+  }
+  .header:hover{
+    box-shadow: 0 0 15px #dd3da0;
+    transition: 4s;
+    transform: scale(0.75);
+  }
+  /* Увеличим размер шрифта заголовка */
+  .header h1 {
+    font-size: 50px;
+    color: #dd3da0;
+    text-align: center;
+  }
+  .header p{
+    font-size: 30px;
+    color: rgb(156, 99, 221);;
+    text-align: center;
+  }
+
+
+.container {
+	padding: 2rem;
+}
+
+.slider-wrapper {
+	position: relative;
+	max-width: 45rem;
+	margin: 0 auto;
+}
+
+.slider {
+ 
+  height: 631px;
+  width: 671px;
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+	scrollbar-width: none; /* Hide scrollbar Firefox */
+  
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+    height: 631px;
+    width: 671px;
+  
+    
+    
+}
+
+
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+
+
+}
+
+.slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
+  
+  /* Стили верхней навигационной панели */
+  .topnav {
+    overflow: hidden;
+    background-color: #201a1e;
+  }
+  
+  /* Стили ссылок верхней нав.панели */
+  .topnav a {
+    margin: 1%;
+    font-size: 20px;
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 1s;
+    border-radius: 100%;
+  }
+  
+  /* Меняем цвет при наведении мыши */
+  .topnav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(121, 5, 101);
+    border-radius: 100%;
+    transition: 1s;
+    box-shadow: 0 0 25px rgb(255, 255, 255);
+    font-size: 25;
+    transform: rotate(5deg);
+  }
+  
+  /* Создаем две не равные колонки, которые обтекают друг друга (становятся рядом друг с другом) */
+  /* Главная колонка */
+  .main {   
+    -ms-flex: 70%; /* IE10 */
+    flex:70%;
+    background-color: #201a1e;
+    padding: 20px;
+    text-align: center;
+    transition: 3s;
+    box-shadow: 0 0 15px #b83ddd;
+  }
+  .main:hover{
+    background-color: #201a1e;
+    transition: 3s;
+    box-shadow: 0 0 25px #b83ddd;
+  }
+
+  .main h2 {
+    color: #231729;
+    font-size: 20px;
+  }
+  .main h2{
+    border: 3px double #dd3da0;
+  }
+  
+  /* Левая колонка */
+  .side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;   
+    background-color: #201a1e;;
+    padding: 20px;
+    padding-left: 20px;
+  }
+  .row h2{
+    color:#fd50bb;
+    font-size: 30px;
+
+  }
+  .row h3 {
+    color: #ddd;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .row h5{
+    color: #ffb9e4;
+    font-size: 20px;
+
+  }
+  /* Заглушка изображения */
+  .fakeimg1 {
+    background-color: rgb(99, 101, 221);;
+    width: 100%;
+    padding: 20px;
+
+  }
+  .fake{
+    transition: 3s;
+
+  }
+  .fake:hover{
+    transform: translateY(-10px);
+  
+    transition: 3s;
+  }
+  /* Заглушка изображения */
+  .fakeimg2 {
+    background-color: rgb(99, 101, 221);
+    width: 100%;
+    padding: 20px;
+
+  }
+  /* Заглушка изображения */
+  .fakeimg3 {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+
+  }
+  
+  .row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  
+  /* Подвал */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }
+  
+  /* Адаптивный макет - когда ширина экрана меньше 700px, две колонки отображаются друг над другом, а не рядом друг с другом */
+  @media (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Адаптивный макет - когда ширина экрана меньше 400px, ссылки навигационной панели отображаются друг над другом, а не рядом друг с другом */
+  @media (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width:100%;
+    }
+  }
+  .fake{
+    width: 300px;
+    height: 300px;
+    border: 10px double #dd3da0;
+    box-shadow: 0 0 25px #dd3da0;
+    transition: 3s;
+
+  }
+  .fake:hover{
+    box-shadow: 0 0 25px #dd3da0,
+    0 0 25px #dd3da0,0 0 25px #dd3da0,
+    0 0 25px #dd3da0,0 0 25px #dd3da0;
+    transition: 2s;
+  }
+.fake img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.animation{
+  margin-top: -40%;
+  position: absolute;
+  background-color: #dd3da0;
+  transition: 3s;
+}
+.animation:hover{
+transition: 3s;
+transform: translateY(5px);
+}
+.animation1{
+  margin-top: -30%;
+  position: absolute;
+  background-color: #dd3da0;
+  transition: 3s;
+}
+.animation1:hover{
+transition: 3s;
+transform: translateY(-20px);
+
+}
+.animation2{
+  margin-top: -30%;
+  position: absolute;
+  background-color: #dd3da0;
+  transition: 3s;
+}
+.animation2:hover{
+transition: 3s;
+transform: translateY(-20px);
+}
+.animation3{
+  margin-top: -30%;
+  position: absolute;
+  background-color: #dd3da0;
+  transition: 3s;
+}
+.animation3:hover{
+transition: 3s;
+transform: translateY(-10px);
+}
+.animation4{
+  margin-top: -30%;
+  position: absolute;
+  background-color: #dd3da0;
+  transition: 3s;
+}
+.animation4:hover{
+transition: 3s;
+transform: translateY(-10px);
+}
+.animation5{
+  margin-top: -30%;
+  position: absolute;
+  background-color: #dd3da0;
+  transition: 3s;
+}
+.animation5:hover{
+transition: 3s;
+transform: translateY(10px);
+}
+.animation6{
+  margin-top: -30%;
+  position: absolute;
+  background-color: #dd3da0;
+  transition: 3s;
+}
+.animation6:hover{
+transition: 3s;
+transform: translateY(-10px);
+}
+.animation8{
+  margin-top: -30%;
+  position: absolute;
+  background-color: #dd3da0;
+  transition: 3s;
+}
+.animation8:hover{
+transition: 3s;
+transform: translateY(30px);
+}
+.animation9{
+  transform: translateX(280px);
+  margin-top: -30%;
+  position: absolute;
+  background-color: #dd3da0;
+  transition: 3s;
+  margin-left: -20%;
+}
+.animation9:hover{
+transition: 3s;
+transform: translateY(30px);
+transform: translateX(300px);
+}
+.c1{
+position:absolute;;
+transition: 3s;
+}
+.c1:hover{
+transition: 3s;
+transform: translateY(-20px);
+
+}
+.c2{
+position: absolute;
+}
+.c2:hover{
+transition: 3s;
+transform: translateY(-10px);
+}
+.c3{
+position:absolute;
+}
+.c4{
+position:absolute;
+}
+.c5{
+position:absolute;
+}
+.c6{
+position:absolute;
+}
+.c7{
+position: absolute;
+}
+.c8{
+position: absolute;
+}
+.c9{
+  position: absolute;
+  }
+.c9 h1{
+  position: absolute;
+  color: #85286e;
+  top: 100px;
+  left: 160px;
+  width: 100%;
+  margin: 0 auto;
+  width: 300px;
+  height: 50px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 29px;
+  
+ 
+  
+}

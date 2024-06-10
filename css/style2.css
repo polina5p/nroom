@@ -1,0 +1,116 @@
+body{
+    background-color: rgb(26, 16, 29);
+}
+.box{
+    max-width: 720px;
+    margin: 100px auto;
+    background-color: rgb(14, 14, 14);;
+    border-radius: 7px;
+    box-shadow: 0 0 25px rgb(115, 0, 247);;
+}
+
+.heading{
+    background: rgb(167, 97, 247);;
+    border-radius: 3px;
+    padding: 10px;
+    color: rgb(255, 255, 255);;
+    text-align: center;
+    font-size: 30px;
+}
+.fags{
+    padding: 0px 20px 20px;
+   
+}
+.fags a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+   
+}
+::webkit-details-marker{
+    float: right;
+    margin-top: 3px;
+   
+
+}
+details{   
+background-color: rgb(37, 37, 37);
+padding: 10px 20px;
+border-radius: 7px ;
+margin-top: 20px;   
+font-size: 18px;
+letter-spacing: 1px;
+cursor: pointer;
+color: aliceblue;
+}
+
+details summary{
+    outline: none;
+   
+}
+.Exit {
+    padding: 1rem 1rem;
+    max-width: 10rem;
+    margin-top: 0 auto;
+    border-radius: 2.5rem;
+    background-color: rgb(255, 255, 255);;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    top:50px; 
+    left:50px; 
+    display: grid;
+    width: 100%;
+    grid-gap: 20px;
+   
+  
+  }
+  .Exit a {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    
+    
+  }
+  .Exit :hover{
+    border-radius: 2.5rem;
+    padding: 1rem 2rem;
+    max-width: 10rem;
+    margin-top: 3%;
+    background-color: rgb(158, 76, 252);;
+    color: rgb(255, 255, 255);  
+    transition: 0.3s;
+  }
+  .zapis{
+    padding: 1rem 1rem;
+    max-width: 10rem;
+    margin-top: 0 auto;
+    border-radius: 2.5rem;
+    background-color: rgb(255, 255, 255);;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    top:50px; 
+    right:50px; 
+    display: grid;
+    width: 100%;
+    grid-gap: 20px;
+  }
+  .zapis a {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+  }
+  .zapis :hover{
+    border-radius: 2.5rem;
+    padding: 1rem 2rem;
+    max-width: 10rem;
+    margin-top: 3%;
+    background-color: rgb(252, 76, 185);;
+    color: rgb(255, 255, 255);  
+    transition: 0.3s;
+  }

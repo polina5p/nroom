@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style4.css">
+    <title>Document</title>
+</head>
+    <section class="contacts">
+      <h2 class="heading"><span>Запись</span>на маникюр</h2> 
+      <div class="anketa">
+        <h2>Заполните следующую анкету</h2> 
+        <h3>После отправки анткеты с Вами свяжется мастер Анастасия</h3> 
+    </div>
+      <div class="row">
+        <div class="img">
+            <img src="img/anketa.jpg" width="500" height="600">
+        </div>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="9f9490ec-0d45-4283-9a9d-46dbd22af6bc">
+            <span>Ваше имя</span>
+            <input type="text" name="Имя" id="" class="box" required placeholder="Напишите сюда Ваше имя" autocomplete="off">
+
+            <span>Ваш email</span>
+            <input type="text" name="email" id="" class="box" required placeholder="Напишите сюда Ваш email" autocomplete="off">
+
+            <span>Ваш номер телефона</span>
+            <input type="text" name="Номер телефона" id="" class="box" required placeholder="Напишите сюда Ваш номер телефона" autocomplete="phone">
+
+            <span>Выберите услугу</span>
+            <Select name="courcec" id="" class="box" required>
+                <option value="" disabled selected>Выберите услугу</option>
+                <option value="Наращивание">Наращивание</option>
+                <option value="Френч">Френч</option>
+                <option value="Комбинированный маникюр">Комбинированный маникюр</option>
+                <option value="Однатон">Однатон</option>
+            </Select>  
+            <span>Ваш пол</span>
+            <div class="gender">
+                <input type="radio" name="gender" id="male"
+                value="male">
+                <label for="male">Мужской</label>
+
+                <input type="radio" name="gender" id="female"
+                value="female">
+                <label for="female">Женский</label>
+            </div>
+            <input type="submit" value="Отправить мастеру" class="btn" 
+            name="Send">
+        <div class="Exit">
+            <a href="index.html">Главная</a>
+        </div>
+    
+                
+
+        </form>
+      </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,177 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #201d29;
+}
+.Exit {
+  padding: 1rem 1rem;
+  max-width: 10rem;
+  margin-top: 0 auto;
+  border-radius: 2.5rem;
+  background-color: rgb(255, 255, 255);;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+  top:50px; 
+  left:50px; 
+  display: grid;
+  width: 100%;
+  grid-gap: 20px;
+ 
+
+}
+.Exit a {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-align: center;
+  
+  
+}
+.Exit :hover{
+  border-radius: 2.5rem;
+  padding: 1rem 2rem;
+  max-width: 10rem;
+  margin-top: 3%;
+  background-color: rgb(158, 76, 252);;
+  color: rgb(255, 255, 255);  
+  transition: 0.3s;
+}
+.zapis{
+  padding: 1rem 1rem;
+  max-width: 10rem;
+  margin-top: 0 auto;
+  border-radius: 2.5rem;
+  background-color: rgb(255, 255, 255);;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+  top:50px; 
+  right:50px; 
+  display: grid;
+  width: 100%;
+  grid-gap: 20px;
+}
+.zapis a {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-align: center;
+  
+  
+}
+.zapis :hover{
+  border-radius: 2.5rem;
+  padding: 1rem 2rem;
+  max-width: 10rem;
+  margin-top: 3%;
+  background-color: rgb(252, 76, 185);;
+  color: rgb(255, 255, 255);  
+  transition: 0.3s;
+}
+
+
+.container {
+  display: grid;
+  margin: 0 auto;
+  width: 100%;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 310px));
+  position: relative;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.card {
+  
+  width: 100%;
+  border-radius: 19px;
+  overflow: hidden;
+  transition: 1.5s;
+  box-shadow: 0 0 25px #dd3da0;
+}
+.card:hover{
+  transform: translateY(-20px);
+  transition: 3s;
+  box-shadow: 0 0 35px #8325ff;
+
+}
+.card__poster {
+  
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: rgb(54, 56, 63);
+  margin-left: 0px;
+}
+
+
+.card-poster__image {
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__databox {
+
+  display: grid;
+  grid-gap: 30px;
+  width: 1000;
+  padding: 25px 30px 20px 30px;
+  overflow: hidden;
+  background: #fff;
+}
+.card__databox :hover{
+  filter: blur(0px);
+}
+
+.card-databox__heading {
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding-right: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
+}
+
+.card-databox__description {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  line-height: 1.9;
+  color: #292222;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-databox__read-more-btn {
+  color: #fff;
+  transition: background 0.2s ease;
+  font-family: "Roboto", sans-serif;
+  max-width: fit-content;
+  font-size: 14px;
+  padding: 5px 15px;
+  background: rgb(148, 177, 255);
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.card-databox__read-more-btn:hover {
+  background: rgb(76, 94, 252);;
+  color: #fff;
+
+}
